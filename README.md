@@ -25,6 +25,8 @@ Then visit `http://localhost:8000` in your browser.
 
 ## 🌐 Deployment Options
 
+The portfolio is deployed and can be accessed at: [Portfolio Website](https://portfolio-3hns.onrender.com)
+
 ### Render Deployment (Recommended)
 
 #### Static Site Deployment
@@ -272,5 +274,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Need help with deployment?** Check out the [Render Documentation](https://render.com/docs) or create an issue in this repository!
-#   p o r t f o l i o  
- 

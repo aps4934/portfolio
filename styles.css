@@ -201,6 +201,27 @@ body {
     animation: spiderMove 8s ease-in-out infinite;
 }
 
+/* Spider Image */
+.spider-image {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 100px;
+    color: lightgrey;
+    z-index: 1;
+    animation: spiderFloat 10s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes spiderFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 .spider-body {
     animation: spiderPulse 2s ease-in-out infinite;
 }

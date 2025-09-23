@@ -243,6 +243,7 @@ Edit the `projects` section in `index.html`:
 - 💼 [LinkedIn](http://www.linkedin.com/in/aps4934g)
 - 🧪 [LeetCode](https://leetcode.com/u/aps4934g/)
 - 🆔 [ORCID](https://orcid.org/0009-0005-8433-0107)
+- 🛜 [Portfolio](https://portfolio-3hns.onrender.com)
 
 ## 📄 License
 
@@ -272,3 +273,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Need help with deployment?** Check out the [Render Documentation](https://render.com/docs) or create an issue in this repository!
+

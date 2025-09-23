@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pratap Singh - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>APS</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Spider Web Background -->
+        <div class="spider-web-container">
+            <svg class="spider-web" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                <!-- Web center -->
+                <circle class="web-center" cx="400" cy="300" r="8" fill="rgba(255, 255, 255, 0.3)"/>
+
+                <!-- Main radial lines -->
+                <g class="web-radials">
+                    <line class="web-line" x1="400" y1="300" x2="100" y2="50" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="700" y2="50" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="750" y2="300" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="700" y2="550" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="400" y2="550" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="100" y2="550" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="50" y2="300" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                    <line class="web-line" x1="400" y1="300" x2="100" y2="150" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+                </g>
+
+                <!-- Spiral web lines -->
+                <g class="web-spiral">
+                    <path class="web-spiral-line" d="M 400 300 Q 250 100 100 50 Q 300 200 400 300 Q 500 200 700 50 Q 550 100 400 300 Q 600 400 750 300 Q 500 500 400 300 Q 300 400 50 300 Q 200 200 400 300 Q 350 150 400 300 Q 450 450 400 300"
+                          stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" fill="none"/>
+                </g>
+
+                <!-- Connecting circles -->
+                <g class="web-circles">
+                    <circle class="web-circle" cx="100" cy="50" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="700" cy="50" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="750" cy="300" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="700" cy="550" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="400" cy="550" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="100" cy="550" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="50" cy="300" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                    <circle class="web-circle" cx="100" cy="150" r="3" fill="rgba(255, 255, 255, 0.1)"/>
+                </g>
+
+                <!-- Animated spider -->
+                <g class="spider" transform="translate(380, 280)">
+                    <circle class="spider-body" cx="20" cy="20" r="6" fill="rgba(255, 255, 255, 0.4)"/>
+                    <circle class="spider-head" cx="20" cy="14" r="4" fill="rgba(255, 255, 255, 0.3)"/>
+                    <!-- Spider legs -->
+                    <g class="spider-legs">
+                        <line class="spider-leg" x1="20" y1="20" x2="8" y2="12" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1"/>
+                        <line class="spider-leg" x1="20" y1="20" x2="32" y2="12" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1"/>
+                        <line class="spider-leg" x1="20" y1="20" x2="8" y2="28" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1"/>
+                        <line class="spider-leg" x1="20" y1="20" x2="32" y2="28" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Aditya Pratap Singh</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Software Developer & AI Enthusiast</h2>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions using cutting-edge technologies.
+                        Specializing in AI/ML, web development, and full-stack applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">33</span>
+                                <span class="stat-label">Contributions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a dedicated Software Developer based in Kanpur, India, with a passion for creating
+                            innovative technological solutions. My journey in software development has equipped me
+                            with expertise in multiple programming languages and frameworks.
+                        </p>
+                        <p class="about-description">
+                            I specialize in AI/ML applications, web development, and creating user-centric applications.
+                            My GitHub showcases diverse projects ranging from machine learning models to full-stack
+                            web applications, demonstrating my commitment to continuous learning and practical implementation.
+                        </p>
+                    </div>
+
+                    <!-- Core Values Section -->
+                    <div class="core-values-container">
+                        <h3 class="values-title">Core Values</h3>
+                        <div class="core-values-grid">
+                            <div class="core-value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable, efficient, and well-documented code that stands the test of time.</p>
+                            </div>
+                            <div class="core-value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>Innovation</h4>
+                                <p>Embracing cutting-edge technologies and creative problem-solving approaches.</p>
+                            </div>
+                            <div class="core-value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Excellence</h4>
+                                <p>Delivering high-quality solutions that exceed expectations and create real value.</p>
+                            </div>
+                            <div class="core-value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Collaboration</h4>
+                                <p>Working effectively with teams and fostering positive working relationships.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vision and Mission Cards -->
+                    <div class="vision-mission-container">
+                        <div class="vision-mission-grid">
+                            <div class="vision-card">
+                                <div class="card-header">
+                                    <div class="card-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h3>Vision</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>To be a leading force in technological innovation, creating solutions that make a meaningful impact on society and drive positive change through intelligent software development.</p>
+                                </div>
+                            </div>
+                            <div class="mission-card">
+                                <div class="card-header">
+                                    <div class="card-icon">
+                                        <i class="fas fa-bullseye"></i>
+                                    </div>
+                                    <h3>Mission</h3>
+                                </div>
+                                <div class="card-content">
+                                    <p>To develop cutting-edge software solutions using AI/ML technologies, while maintaining the highest standards of code quality and user experience. Continuously learning and adapting to emerging technologies to solve complex real-world problems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                            <h4>Aditya Pratap Singh</h4>
+                            <p>Software Developer & AI Enthusiast</p>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-card">
+                            <h3>Basic Information</h3>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kanpur, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Available on request</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Available for opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">
+                        <i class="fas fa-cogs"></i>
+                        Frameworks & Tools
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">
+                        <i class="fas fa-brain"></i>
+                        AI/ML & Data
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">Deep Learning</span>
+                        <span class="skill-item">Data Analysis</span>
+                        <span class="skill-item">Jupyter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">
+                        <i class="fas fa-database"></i>
+                        Database & Cloud
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Firebase</span>
+                        <span class="skill-item">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/Fake-News-Detection" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://fake-news-detection-1-vgdh.onrender.com/" target="_blank" class="project-link deployed-link" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Fake News Detection</h3>
+                    <p class="project-description">
+                        Machine learning model to detect fake news using natural language processing
+                        and classification algorithms. Built with Python and Jupyter Notebook.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-sign-language"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/Sign-Language-Detection" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://sign-language-detection-1-1u9g.onrender.com" target="_blank" class="project-link deployed-link" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sign Language Detection</h3>
+                    <p class="project-description">
+                        Real-time sign language detection system using computer vision and
+                        machine learning to interpret hand gestures.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">ML</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/url-shortener" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://url-shortener-2-6f21.onrender.com/" target="_blank" class="project-link deployed-link" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">URL Shortener</h3>
+                    <p class="project-description">
+                        Clean and efficient URL shortening service with custom alias
+                        support and click tracking functionality.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Web App</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/Movie-Recommendation" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Movie Recommendation System</h3>
+                    <p class="project-description">
+                        Intelligent movie recommendation engine using collaborative filtering
+                        and content-based filtering algorithms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Data Science</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-clone"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/netflix-clone" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Netflix Clone</h3>
+                    <p class="project-description">
+                        Full-featured Netflix clone with user authentication, video streaming,
+                        and modern UI/UX design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/amazon-clone" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Amazon Clone</h3>
+                    <p class="project-description">
+                        E-commerce platform clone with product catalog, shopping cart,
+                        user authentication, and payment integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">E-commerce</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/AI_powered_code_generator" target="_blank" class="project-link" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI Code Generator</h3>
+                    <p class="project-description">
+                        AI-powered code generation tool that creates code snippets and
+                        templates based on natural language descriptions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Code Generation</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aps4934/2201641530013" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Academic Project</h3>
+                    <p class="project-description">
+                        Comprehensive academic project showcasing software development
+                        skills and practical implementation of learned concepts.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Academic</span>
+                        <span class="tech-tag">Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://github.com/aps4934" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="http://www.linkedin.com/in/aps4934g" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://leetcode.com/u/aps4934g/" target="_blank" class="contact-link">
+                            <i class="fas fa-code"></i>
+                            <span>LeetCode</span>
+                        </a>
+                        <a href="https://orcid.org/0009-0005-8433-0107" target="_blank" class="contact-link">
+                            <i class="fas fa-id-badge"></i>
+                            <span>ORCID</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Aditya Pratap Singh</h3>
+                    <p>Software Developer & AI Enthusiast</p>
+                    <p>Kanpur, India</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/aps4934" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://www.linkedin.com/in/aps4934g" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/aps4934g/" target="_blank"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aditya Pratap Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

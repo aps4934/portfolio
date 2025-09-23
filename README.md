@@ -272,5 +272,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Need help with deployment?** Check out the [Render Documentation](https://render.com/docs) or create an issue in this repository!
-#   p o r t f o l i o  
- 

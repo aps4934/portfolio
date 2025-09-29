@@ -126,8 +126,11 @@ document.addEventListener('DOMContentLoaded', function() {
         statsObserver.observe(stat);
     });
 
-    // Contact form handling
+    // Contact form handling with EmailJS
     const contactForm = document.getElementById('contactForm');
+
+    // Initialize EmailJS with actual public key
+    emailjs.init('2yx3BedZfta_uIGEP');
 
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -150,19 +153,31 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Simulate form submission
+        // Real form submission using EmailJS
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
 
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
+        // Send using actual EmailJS service ID and template ID
+        emailjs.send('service_n5hz2is', 'template_9aetql8', {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message
+        }).then((response) => {
             showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
             this.reset();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+            console.log('SUCCESS!', response.status, response.text);
+        }, (error) => {
+            showNotification('Failed to send message. Please try again later.', 'error');
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            console.error('FAILED...', error);
+        });
     });
 
     // Email validation

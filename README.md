@@ -1,5 +1,7 @@
 # Aditya Pratap Singh - Portfolio Website
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Project-blue)](https://portfolio-3hns.onrender.com/)
+
 A modern, responsive, and dynamic portfolio website showcasing the work and skills of Aditya Pratap Singh, a Software Developer and AI enthusiast.
 
 ## 🚀 Quick Start
